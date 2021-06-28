@@ -6,12 +6,17 @@
 // boolean value, and the likes property should have a value that is an 
 // array.Inside the array, include at least 4 values.
 let goodDoggo = {
+  name: 'Dog',
+  legs: 12,
+  tail: true,
+  likes: [2, 3, 1, 5],
   //your code in here
 }
 
 
 // write a function that returns the value of the legs property on your dog object using dot notation.
 function howManyLegs() {
+  return goodDoggo.legs
   // your code inside here
   // don't forget to use the return keyword
 }
@@ -29,6 +34,7 @@ let cat = {
 // "Pickles" to "Kevin".Then use either dot or bracket notation to return 
 // the value of the name property.
 function renameCat() {
+  return cat.name = "Kevin"
   // your code inside here
 }
 
@@ -37,16 +43,17 @@ function renameCat() {
 // Then return the value of the color property.
 
 function colorTheCat() {
+  return cat.color = "blue"
   // your code inside here
 }
 
 // Delete the whiskers property off of the cat object. You may use either dot or bracket notation.
-
-
+delete (cat.whiskers)
 // Write a function that uses dot AND bracket notation to access and return the 
 // value of the fourth item in the likes array("pets"). 
 // Example: objectName.property[indexNumber]
 
 function returnIndex(cat) {
   // your code inside here
+  return cat.likes[3]
 }
